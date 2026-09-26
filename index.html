@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Jagruti Aher</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#110720] text-white font-sans antialiased">
+
+  <!-- HEADER COMPONENT -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#110720]/90 backdrop-blur-md border-b border-white/10">
+    <nav class="px-6 py-4">
+        <div class="container mx-auto max-w-6xl flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="#" class="inline-flex items-center gap-2 group">
+            <span class="text-xl sm:text-2xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-purple-400 group-hover:from-purple-300 group-hover:to-violet-400 transition-all">
+            JAGRUTI AHER
+            </span>
+            <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
+        </a>
+
+        <!-- Hamburger Button (Mobile - 3 Lines Icon) -->
+        <button id="menu-btn" aria-label="Toggle Navigation" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none">
+            <span class="w-6 h-0.5 bg-white rounded-full transition-all"></span>
+            <span class="w-6 h-0.5 bg-white rounded-full transition-all"></span>
+            <span class="w-6 h-0.5 bg-white rounded-full transition-all"></span>
+        </button>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
+            <li><a href="#home" class="text-white hover:text-purple-400 transition-colors">Home</a></li>
+            <li><a href="#about" class="text-white hover:text-purple-400 transition-colors">About</a></li>
+            <li><a href="#experience" class="text-white hover:text-purple-400 transition-colors">Experience</a></li>
+            <li><a href="#resume" class="text-white hover:text-purple-400 transition-colors">Resume</a></li>
+            <li><a href="#contact" class="text-white hover:text-purple-400 transition-colors">Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Mobile Dropdown Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2 border-t border-white/10 mt-3">
+        <ul class="flex flex-col gap-3 list-none p-0 m-0">
+            <li><a href="#home" class="block py-2 text-white hover:text-purple-400 transition-colors">Home</a></li>
+            <li><a href="#about" class="block py-2 text-white hover:text-purple-400 transition-colors">About</a></li>
+            <li><a href="#experience" class="block py-2 text-white hover:text-purple-400 transition-colors">Experience</a></li>
+            <li><a href="#resume" class="block py-2 text-white hover:text-purple-400 transition-colors">Resume</a></li>
+            <li><a href="#contact" class="block py-2 text-white hover:text-purple-400 transition-colors">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    </header>
+
+    <!-- BANNER COMPONENT -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+    <div class="container mx-auto max-w-6xl">
+        <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-0">
+        
+        <!-- Character Image Section -->
+        <div class="flex justify-center lg:justify-end relative w-full lg:w-auto">
+            <div class="relative lg:top-10 flex flex-col items-center">
+            
+            <!-- Mobile Badge -->
+            <div class="lg:hidden relative mb-4 z-10">
+                <div class="relative inline-block">
+                <img src="public/assets/arrow.png" alt="Arrow pointer" class="absolute -top-6 -left-8 -rotate-45 w-12 sm:w-16 h-auto" />
+                <div class="relative">
+                    <p class="text-white text-base sm:text-lg whitespace-nowrap">
+                    Hello! I Am <span class="text-purple-400">Jagruti Aher</span>
+                    </p>
+                </div>
+                <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
+                </div>
+            </div>
+
+            <!-- Responsive Image Container -->
+            <div class="relative w-full max-w-[280px] sm:max-w-sm lg:max-w-md">
+                <img src="public/assets/Mee1.png" alt="Jagruti - Software Engineer and Designer" class="max-w-full absolute w-auto h-auto z-10" style="padding-right: 10%; padding-top: 10%;"/>
+                <img src="public/assets/me-glow.png" alt="Jagruti - Software Engineer and Designer" class="max-w-full w-auto h-auto" />
+            </div>
+
+            </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="flex-1 space-y-6 text-center lg:text-left mt-6 lg:mt-0">
+            
+            <!-- Desktop Badge -->
+            <div class="hidden lg:inline-block relative mb-6">
+            <img src="public/assets/arrow.png" alt="Arrow pointer" class="absolute -left-[100px] -top-[50px] w-25 h-auto" />
+            <div class="relative">
+                <p class="text-white text-lg">
+                Hello! I Am <span class="text-purple-400 font-semibold">Jagruti Aher</span>
+                </p>
+            </div>
+            <div class="absolute -bottom-2 left-8 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
+            </div>
+
+            <!-- Main Headline Section -->
+            <div>
+            <p class="text-xl sm:text-2xl text-white/90">A Software Developer who</p>
+            <h1 class="text-3xl sm:text-5xl lg:text-7xl font-semibold text-white leading-tight mt-1 lg:!text-[3.9rem]">
+                Turns complex problems <br class="hidden sm:inline" /> into 
+                <span class="relative inline-block">
+                <img src="public/assets/circle.png" alt="Circle accent" class="absolute mt-2 w-36 sm:w-56 h-auto left-1/2 -translate-x-1/2" />
+                <span class="bg-gradient-to-r from-violet-600 via-violet-400 to-violet-600 bg-clip-text text-transparent">
+                    solutions
+                </span>
+                </span>
+                ...
+            </h1>
+            <p class="text-base sm:text-lg text-white/90 mt-4 max-w-xl mx-auto lg:mx-0">
+                Building scalable web applications with robust backend logic and responsive, user-focused interfaces.
+            </p>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+  <!-- ABOUT COMPONENT -->
+    <section id="about" class="py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+        
+        <!-- Section Heading -->
+        <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4">About Me</h2>
+        <p class="text-lg text-white/80 max-w-2xl mx-auto">
+            I'm currently looking to join a <span class="text-purple-400 font-semibold">cross-functional team</span> as a Full Stack Developer.
+        </p>
+        </div>
+
+        <!-- Main Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        
+        <!-- LEFT SIDE: Profile Card & Skills -->
+        <div class="space-y-8">
+            
+            <!-- Profile Info Card -->
+            <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
+            <div class="space-y-3 text-white/90">
+                <p><span class="text-purple-400 font-medium">Name:</span> Jagruti Aher</p>
+                <p><span class="text-purple-400 font-medium">Designation:</span> Software Developer</p>
+                <p><span class="text-purple-400 font-medium">Experience:</span> Fresher</p>
+                <p><span class="text-purple-400 font-medium">Address:</span> Pune, Maharashtra, India</p>
+            </div>
+            </div>
+
+            <!-- Skills Bars -->
+            <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
+            <h3 class="text-xl font-bold text-white mb-6">Technical Skills</h3>
+            
+            <div class="space-y-5">
+                <!-- Skill 1 -->
+                <div>
+                <div class="flex justify-between text-sm mb-2">
+                    <span class="text-white/90 font-medium">HTML, CSS, JavaScript</span>
+                    <span class="text-purple-400 font-semibold">87%</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full h-2.5 overflow-hidden">
+                    <div class="bg-gradient-to-r from-violet-600 to-purple-400 h-2.5 rounded-full" style="width: 87%"></div>
+                </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div>
+                <div class="flex justify-between text-sm mb-2">
+                    <span class="text-white/90 font-medium">C#, ASP.NET Core, Web API</span>
+                    <span class="text-purple-400 font-semibold">85%</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full h-2.5 overflow-hidden">
+                    <div class="bg-gradient-to-r from-violet-600 to-purple-400 h-2.5 rounded-full" style="width: 85%"></div>
+                </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div>
+                <div class="flex justify-between text-sm mb-2">
+                    <span class="text-white/90 font-medium">SQL Server</span>
+                    <span class="text-purple-400 font-semibold">80%</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full h-2.5 overflow-hidden">
+                    <div class="bg-gradient-to-r from-violet-600 to-purple-400 h-2.5 rounded-full" style="width: 80%"></div>
+                </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div>
+                <div class="flex justify-between text-sm mb-2">
+                    <span class="text-white/90 font-medium">React, Angular</span>
+                    <span class="text-purple-400 font-semibold">75%</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full h-2.5 overflow-hidden">
+                    <div class="bg-gradient-to-r from-violet-600 to-purple-400 h-2.5 rounded-full" style="width: 75%"></div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE: Bio & Details Grid -->
+        <div class="space-y-8">
+            
+            <!-- Bio Card -->
+            <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl backdrop-blur-sm">
+            <p class="text-white/90 text-lg leading-relaxed">
+                👋 Hi! I'm <strong class="text-white">Jagruti Aher</strong>. I have completed my B.Tech and trained in <strong class="text-purple-400">Full Stack .NET Development</strong>.
+            </p>
+            <p>
+                 During my internship, I worked on <strong class="text-purple-400">4+ web projects</strong>, gaining hands-on experience in building responsive 
+                 web applications using C#, ASP.NET Core, SQL Server, and modern frontend technologies like HTML, CSS, JS and Angular.
+            </p>
+            <p class="text-white/80 text-base leading-relaxed mt-4">
+                💻 My major project includes a <strong class="text-white">Hotel Booking Management System</strong> developed using ASP.NET Core with database integration and role-based access control features.
+            </p>
+            </div>
+
+            <!-- Additional Details Grid -->
+            <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white/90">
+                <div>
+                <p class="text-xs text-white/50 uppercase tracking-wider">Profile</p>
+                <p class="font-medium text-white">Software Developer</p>
+                </div>
+                <div>
+                <p class="text-xs text-white/50 uppercase tracking-wider">Job Role</p>
+                <p class="font-medium text-white">Dotnet Development</p>
+                </div>
+                <div>
+                <p class="text-xs text-white/50 uppercase tracking-wider">Education</p>
+                <p class="font-medium text-white">B.Tech (E & CE)</p>
+                </div>
+                <div>
+                <p class="text-xs text-white/50 uppercase tracking-wider">Languages</p>
+                <p class="font-medium text-white">Marathi, Hindi, English</p>
+                </div>
+                <div>
+                <p class="text-xs text-white/50 uppercase tracking-wider">Other Skills</p>
+                <p class="font-medium text-white">GitHub, Git</p>
+                </div>
+                <div>
+                <p class="text-xs text-white/50 uppercase tracking-wider">Interest</p>
+                <p class="font-medium text-white">Learning New Technology</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+  <!-- EXPERIENCE COMPONENT -->
+    <section id="experience" class="py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+        
+        <!-- Section Heading -->
+        <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4">
+            Work Experience
+        </h2>
+        </div>
+
+        <!-- Internship Headline Card -->
+        <div class="mb-12 bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border-t-2 border-purple-500 shadow-xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+            <div>
+            <h3 class="text-2xl font-bold text-white">Full Stack .NET Developer Intern</h3>
+            <p class="text-purple-400 font-medium text-lg">Sanchi Solution Private Limited, Pune</p>
+            </div>
+            <span class="inline-block px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-sm font-semibold w-fit">
+            6 Months Internship
+            </span>
+        </div>
+        <p class="text-white/80 leading-relaxed text-base">
+            Independently developed, deployed, and managed three production-ready client web applications end-to-end. Built secure backends using C# and ASP.NET Core integrated with SQL Server, while crafting responsive dynamic frontend interfaces.
+        </p>
+        </div>
+
+        <!-- Subheading for Internship Projects -->
+        <h3 class="text-2xl font-semibold text-white mb-6 flex items-center gap-3">
+        <span class="w-3 h-3 rounded-full bg-purple-400"></span>
+        Projects Delivered During Internship
+        </h3>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Project 1: Atulkumar Upadhye -->
+        <div class="bg-gradient-to-br from-slate-950 via-purple-950/50 to-slate-950 backdrop-blur-sm rounded-xl p-6 border-t-2 border-purple-700 hover:shadow-2xl hover:shadow-purple-900/40 transition-all flex flex-col justify-between">
+            <div>
+            <div class="mb-4">
+                <img src="public/cards/card-1.png" alt="Atulkumar Upadhye Website" class="w-20 h-20 object-contain" />
+            </div>
+            <h4 class="text-xl font-semibold text-white mb-2">Atulkumar Upadhye</h4>
+            <p class="text-white/70 text-sm mb-6 leading-relaxed">
+                Official web platform developed independently using ASP.NET Core and modern frontend technologies with dynamic database integrations.
+            </p>
+            </div>
+            <div>
+            <a href="https://www.atulkumarupadhye.com/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors inline-flex items-center gap-1">
+                VISIT LIVE SITE &rarr;
+            </a>
+            </div>
+        </div>
+
+        <!-- Project 2: Tejas Upadhye -->
+        <div class="bg-gradient-to-br from-slate-950 via-purple-950/50 to-slate-950 backdrop-blur-sm rounded-xl p-6 border-t-2 border-purple-700 hover:shadow-2xl hover:shadow-purple-900/40 transition-all flex flex-col justify-between">
+            <div>
+            <div class="mb-4">
+                <img src="public/cards/card-2.png" alt="Tejas Upadhye Website" class="w-20 h-20 object-contain" />
+            </div>
+            <h4 class="text-xl font-semibold text-white mb-2">Tejas Upadhye</h4>
+            <p class="text-white/70 text-sm mb-6 leading-relaxed">
+                Custom client web application built end-to-end with full-stack .NET architecture, focusing on performance and responsive design.
+            </p>
+            </div>
+            <div>
+            <a href="https://tejasupadhye.com/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors inline-flex items-center gap-1">
+                VISIT LIVE SITE &rarr;
+            </a>
+            </div>
+        </div>
+
+        <!-- Project 3: Rajas Upadhye -->
+        <div class="bg-gradient-to-br from-slate-950 via-purple-950/50 to-slate-950 backdrop-blur-sm rounded-xl p-6 border-t-2 border-purple-700 hover:shadow-2xl hover:shadow-purple-900/40 transition-all flex flex-col justify-between">
+            <div>
+            <div class="mb-4">
+                <img src="public/cards/card-3.png" alt="Rajas Upadhye Website" class="w-20 h-20 object-contain" />
+            </div>
+            <h4 class="text-xl font-semibold text-white mb-2">Rajas Upadhye</h4>
+            <p class="text-white/70 text-sm mb-6 leading-relaxed">
+                Developed and implemented responsive web pages with focus on usability, layout, and cross-device compatibility.
+            </p>
+            </div>
+            <div>
+            <a href="https://rajasupadhye.com/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors inline-flex items-center gap-1">
+                VISIT LIVE SITE &rarr;
+            </a>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+
+     <!-- RESUME & EDUCATION SECTION -->
+    <section id="resume" class="py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-3">My Resume</h2>
+        <p class="text-purple-400 font-medium text-lg uppercase tracking-wider mb-6">Education & Resume</p>
+        <p class="text-white/80 max-w-3xl mx-auto text-base lg:text-lg leading-relaxed">
+            Full Stack Developer with 6 months of hands-on .NET experience, having contributed to 4+ web projects during internship. Skilled in developing responsive and user-friendly web applications.
+        </p>
+        </div>
+
+        <!-- Subheading: Education -->
+        <div class="mb-12 text-center lg:text-left flex flex-col items-center lg:items-start">
+        <h3 class="text-3xl font-bold text-white mb-2">Education</h3>
+        <div class="w-20 h-1 bg-gradient-to-r from-violet-600 to-purple-400 rounded-full"></div>
+        </div>
+
+        <!-- Education Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        
+        <!-- Card 1: B.Tech -->
+        <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-8 shadow-xl backdrop-blur-sm border-t-2 border-t-purple-600 hover:shadow-2xl hover:shadow-purple-900/40 transition-all flex flex-col justify-between">
+            <div>
+            <span class="inline-block px-4 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 font-semibold text-sm mb-4">
+                2021 – 2025
+            </span>
+            <h4 class="text-2xl font-bold text-white mb-2">(B.Tech) Bachelor of Technology</h4>
+            <p class="text-white/80 font-medium text-base mb-4 uppercase tracking-wide">
+                PES College of Engineering, Aurangabad
+            </p>
+            </div>
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-white/60 text-sm">Overall Score</span>
+            <span class="text-purple-400 font-bold text-lg">73.00%</span>
+            </div>
+        </div>
+
+        <!-- Card 2: 12th Science -->
+        <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-8 shadow-xl backdrop-blur-sm border-t-2 border-t-purple-600 hover:shadow-2xl hover:shadow-purple-900/40 transition-all flex flex-col justify-between">
+            <div>
+            <span class="inline-block px-4 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 font-semibold text-sm mb-4">
+                2020 – 2021
+            </span>
+            <h4 class="text-2xl font-bold text-white mb-2">12th (Science)</h4>
+            <p class="text-white/80 font-medium text-base mb-4 uppercase tracking-wide">
+                Sant Bahinabai Jr. College, Shivoor
+            </p>
+            </div>
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-white/60 text-sm">Overall Score</span>
+            <span class="text-purple-400 font-bold text-lg">81.00%</span>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Download CV Button -->
+        <div class="text-center">
+        <a href="https://drive.google.com/file/d/1Lsds3r815jUU-ePCDSEdZ1FG0jlgltDx/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-violet-600 to-purple-600 text-white font-bold text-base hover:from-violet-500 hover:to-purple-500 shadow-lg shadow-purple-900/50 hover:shadow-purple-700/60 transition-all transform hover:-translate-y-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            DOWNLOAD CV
+        </a>
+        </div>
+
+    </div>
+    </section>
+  <!-- PROJECTS / LAB COMPONENT -->
+  <section id="" class="py-20 px-6">
+    <div class="container mx-auto max-w-7xl">
+      
+      <!-- Project 1 -->
+      <div class="mb-20">
+        <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div>
+            <p class="text-purple-400 text-lg lg:text-xl mb-2 font-medium">Featured Project</p>
+            <h3 class="text-3xl lg:text-4xl font-bold text-white mb-6">Hotel Booking Management System</h3>
+            <div class="relative z-10 mb-6">
+              <div class="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 border border-white/10 shadow-lg lg:w-[calc(100%+20%)]">
+                <p class="text-white/90 text-base lg:text-lg leading-relaxed">
+                  “The Hotel Booking Management System is a web application developed using ASP.NET Core and SQL Server. The main goal of this project was to simplify hotel operations such as room booking, availability checking, and user management".
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          <div>
+            <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
+              <div class="relative w-full h-full rounded-lg overflow-hidden">
+                <img src="public/projects/HBMS.jpg.png" alt="NeuraWeb" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- CONTACT & FOOTER SECTION -->
+    <footer id="contact" class="py-20 px-6 border-t border-white/10 relative overflow-hidden">
+    <div class="container mx-auto max-w-6xl">
+        
+        <!-- Contact Header -->
+        <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4">Contact Me</h2>
+        <p class="text-lg text-white/80 max-w-2xl mx-auto">
+            Below are the details to reach out to me! Feel free to get in touch.
+        </p>
+        </div>
+
+        <!-- Contact Info Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Address Card -->
+        <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-8 text-center shadow-xl backdrop-blur-sm hover:border-purple-500/50 transition-all group">
+            <div class="w-16 h-16 rounded-full bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mx-auto mb-6 text-2xl text-purple-400 group-hover:scale-110 transition-transform">
+            📍
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Address</h3>
+            <p class="text-white/80 text-base">Pune, Maharashtra, India</p>
+        </div>
+
+        <!-- Phone Card -->
+        <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-8 text-center shadow-xl backdrop-blur-sm hover:border-purple-500/50 transition-all group">
+            <div class="w-16 h-16 rounded-full bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mx-auto mb-6 text-2xl text-purple-400 group-hover:scale-110 transition-transform">
+            📞
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Contact Number</h3>
+            <a href="tel:+918767482274" class="text-purple-400 hover:text-purple-300 transition-colors font-medium text-base">
+            +91 8767482274
+            </a>
+        </div>
+
+        <!-- Email Card -->
+        <div class="bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-950 border border-white/10 rounded-2xl p-8 text-center shadow-xl backdrop-blur-sm hover:border-purple-500/50 transition-all group">
+            <div class="w-16 h-16 rounded-full bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mx-auto mb-6 text-2xl text-purple-400 group-hover:scale-110 transition-transform">
+            ✉️
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Email Address</h3>
+            <a href="mailto:jagrutiaher2004@gmail.com" class="text-purple-400 hover:text-purple-300 transition-colors font-medium text-base break-all">
+            jagrutiaher2004@gmail.com
+            </a>
+        </div>
+
+        </div>
+
+        <!-- Question Box -->
+        <div class="bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950 border border-purple-500/30 rounded-2xl p-8 text-center shadow-2xl mb-16 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+            <h3 class="text-2xl font-bold text-white">Have a Question?</h3>
+            <p class="text-white/70 text-sm mt-1">Feel free to drop a message or inquiry anytime!</p>
+        </div>
+        <a href="contact.html" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-violet-600 to-purple-600 text-white font-semibold hover:from-violet-500 hover:to-purple-500 shadow-lg shadow-purple-900/50 transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
+         Click Here &rarr;
+        </a>
+        </div>
+
+        <!-- Social Links & Footer Bottom -->
+        <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+        
+        <!-- Social Media Links -->
+        <div class="flex items-center gap-4">
+            <span class="text-white/60 text-sm font-medium">Find me on:</span>
+            
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/jagruti-aher" target="_blank"class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all" aria-label="LinkedIn">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/AherJagruti" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all" aria-label="GitHub">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            </a>
+
+            <!-- Naukri -->
+            <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank"class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all font-bold text-purple-400 text-sm" aria-label="Naukri Profile">
+            N
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-white/60 text-sm">
+            Copyright &copy; <span id="current-year"></span> Jagruti Aher. All rights reserved.
+        </p>
+
+        </div>
+
+    </div>
+    </footer>
+  <!-- JS SCRIPT INCLUSION -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+</script>
